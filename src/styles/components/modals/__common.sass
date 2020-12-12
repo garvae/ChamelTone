@@ -1,0 +1,77 @@
+@import "../icons/icon_chameltone"
+@import "../buttons/button_donate"
+@import "../../common/grids"
+@import "../../common/keyframes"
+
+
+$animation_slideModalFromTop: slideModalFromTop 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+$animation_slideModalToTop: slideModalToTop 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+
+
+.modalsContainer
+  grid-area: 1/2/3/2
+  @extend .grid_modals_modalSupport
+  display: none
+
+.modalsContainer.showModals
+  display: grid
+
+
+
+
+.modalShare
+  display: none
+
+.modalShare.showModalShare
+  display: grid
+  animation: $animation_slideModalFromTop
+
+.modalShare.hideModalShare
+  display: grid
+  animation: $animation_slideModalToTop
+
+
+
+
+
+.modalDonate
+  display: none
+
+.modalDonate.showModalDonate
+  display: grid
+  animation: $animation_slideModalFromTop
+
+.modalDonate.hideModalDonate
+  display: grid
+  animation: $animation_slideModalToTop
+
+
+
+
+
+.modalDonateRedirect
+  display: none
+
+.modalDonateRedirect.showModalDonateRedirect
+  display: grid
+  z-index: 4
+  animation: $animation_slideModalFromTop
+
+.modalDonateRedirect.hideModalDonateRedirect
+  display: grid
+  z-index: 4
+  animation: $animation_slideModalToTop
+
+
+
+
+.modalSupport
+  display: none
+
+.modalSupport.showModalSupport
+  display: grid
+  animation: $animation_slideModalFromTop
+
+.modalSupport.hideModalSupport
+  display: grid
+  animation: $animation_slideModalToTop

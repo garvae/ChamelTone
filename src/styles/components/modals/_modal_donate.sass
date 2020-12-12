@@ -1,0 +1,69 @@
+@import "../../common/grids"
+@import '../../common/colors'
+@import '../../common/fonts'
+@import '../../common/borders'
+
+.modalDonate
+  display: grid
+  background-color: $grey_82
+  border-radius: 0 0 $radius_100 $radius_100
+  z-index: 3
+  grid-area: 1/1/7/13
+  @extend .grid_modals_modalDonate
+
+
+.modalDonate_description
+  display: grid
+  grid-area: 1/1/3/13
+  padding-top: 2em
+  @extend .grid_modals_modalDonate_description
+  place-items: center
+  cursor: default
+
+
+  & .modalDonate_description__first_line
+    grid-area: first
+    font: $font_modalDonate_description_primary
+    color: $text_secondary_white
+
+  & .modalDonate_description__middle_line
+    grid-area: last
+    font: $font_modalDonate_description_secondary
+    color: $text_secondary_white
+
+
+.modalDonate_buttonDonate
+  display: grid
+  grid-area: 4/1/6/13
+  place-items: center
+  padding-top: 1em
+  cursor: pointer
+  font: $font_modalDonate_description_buttonDonate
+
+  & span
+    max-width: 1.25em
+    max-height: 1.25em
+    background-position: center
+    background-repeat: no-repeat
+
+.modalDonate_centerSingleButton
+  display: grid
+  grid-area: 6/1/6/13
+  justify-items: center
+  align-items: start
+
+
+  & #item
+    color: $text_grey_60
+    font: $font_modalDonate_centerSingleButton
+    padding-bottom: 2em
+
+
+    &:hover
+      color: $text_blue_40
+
+    &:active
+      color: $text_blue_15
+
+
+

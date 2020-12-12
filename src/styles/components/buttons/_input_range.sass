@@ -1,0 +1,98 @@
+@import "../../common/colors"
+@import "../../common/borders"
+@import "../../common/grids"
+@import "../../common/transitions"
+@import "../../common/measurements"
+
+
+.filters__item
+  input[type=range]
+    background-color: transparent
+    -webkit-appearance: none
+
+    &:focus
+      outline: none
+
+    &::-webkit-slider-runnable-track
+      background: $grey_50
+      border-radius: 0.1em
+      height: 0.1em
+      cursor: pointer
+      transition: $transition_background_400
+
+
+    &::-webkit-slider-thumb
+      margin-top: -6.7px
+      width: 1em
+      height: 1em
+      background: $grey_80
+      border: $border_200_b40
+      border-radius: 50%
+      cursor: pointer
+      -webkit-appearance: none
+      transition: $transition_background_400 $transition_border_color_400
+
+    &:focus::-webkit-slider-runnable-track
+      background: $grey_50
+
+    &::-moz-range-track
+      background: $grey_50
+      border-radius: 0.1em
+      height: 0.1em
+      cursor: pointer
+      transition: $transition_background_400
+
+    &::-moz-range-thumb
+      width: 0.85em
+      height: 0.85em
+      background: $grey_80
+      border: $border_200_b40
+      border-radius: 50%
+      cursor: pointer
+      transition: $transition_background_400 $transition_border_color_400
+
+    &:hover
+      &::-webkit-slider-runnable-track
+        background: $blue_40
+        transition: $transition_background_400
+
+      &::-webkit-slider-thumb
+        border: $border_200_b25
+        transition: $transition_border_color_400
+
+      &:focus::-webkit-slider-runnable-track
+        background: $blue_40
+        transition: $transition_background_400
+
+      &::-moz-range-track
+        background: $blue_40
+        transition: $transition_background_400
+
+      &::-moz-range-thumb
+        background: $grey_82
+        border: $border_200_b25
+        transition: $transition_background_400
+
+    &:active
+      &::-webkit-slider-runnable-track
+        background: $blue_25
+        transition: $transition_background_100
+
+      &::-webkit-slider-thumb
+        border: $border_200_b40
+        transition: $transition_border_color_100
+
+      &:focus::-webkit-slider-runnable-track
+        background: $blue_25
+        transition: $transition_background_100
+
+      &::-moz-range-track
+        background: $blue_25
+        transition: $transition_background_100
+
+      &::-moz-range-thumb
+        background: $grey_82
+        border: $border_200_b40
+        transition: $transition_background_100
+
+

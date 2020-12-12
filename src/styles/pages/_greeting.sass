@@ -1,0 +1,60 @@
+@import "../components/modules/module_dropDown"
+@import "../common/grids"
+@import "../common/colors"
+@import "../common/icons"
+@import "../common/fonts"
+@import "../common/borders"
+@import "../common/transitions"
+@import "../common/keyframes"
+
+
+.greeting_langLogo
+  display: grid
+  grid-area: 3/1/5/13
+  place-self: center
+  width: 4em
+  height: 4em
+  background-repeat: no-repeat
+  background-size: contain
+  background-image: $icon_langLogo_b40
+  padding-bottom: 1.5em
+
+.__template__greeting_title
+  display: grid
+  font: $font_page_greeting_title
+  color: $text_primary_white
+  place-self: stretch
+  place-items: center
+
+.greeting_title_en
+  grid-area: 5/1/5/13
+  @extend .__template__greeting_title
+
+.greeting_title_ru
+  grid-area: 6/1/8/13
+  @extend .__template__greeting_title
+
+.greeting_dropDownLang
+  grid-area: 8/2/12/12
+
+  & .edit
+    opacity: 0
+    pointer-events: none
+
+
+
+
+.greeting_button_continue
+  display: grid
+  grid-area: 12/1/12/13
+  justify-self: center
+  align-self: start
+
+  &:hover
+    color: $text_secondary_white
+
+  &:active
+    color: $text_blue_35
+
+
+

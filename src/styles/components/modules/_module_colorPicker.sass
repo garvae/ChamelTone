@@ -1,0 +1,182 @@
+@import "../../common/borders"
+@import "../../common/fonts"
+@import "../../common/grids"
+@import "../../common/transitions"
+@import "../../common/duration"
+
+
+// !!!!!!!!!!!!! DEFAULT STYLES !!!!!!!!!!!!!!!!
+.react-colorful
+  position: relative
+  display: flex
+  flex-direction: column
+  //width: 200px
+  //height: 200px
+  user-select: none
+  cursor: default
+
+.react-colorful__saturation
+  position: relative
+  flex-grow: 1
+  border-bottom: 12px solid #000
+  border-radius: 8px 8px 0 0
+  background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0)), linear-gradient(to right, #fff, rgba(255, 255, 255, 0))
+
+.react-colorful__pointer-fill
+  content: ""
+  position: absolute
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  pointer-events: none
+  border-radius: inherit
+
+.react-colorful__alpha-gradient
+  content: ""
+  position: absolute
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  pointer-events: none
+  border-radius: inherit
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05)
+
+/* Improve elements rendering on light backgrounds
+
+.react-colorful__saturation
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05)
+
+.react-colorful__hue, .react-colorful__alpha
+  position: relative
+  height: 24px
+
+.react-colorful__hue
+  background: linear-gradient(to right, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%)
+
+/* Round bottom corners of the last element: `Hue` for `ColorPicker` or `Alpha` for `AlphaColorPicker`
+
+.react-colorful__last-control
+  border-radius: 0 0 8px 8px
+
+.react-colorful__interactive
+  position: absolute
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  border-radius: inherit
+  outline: none
+
+  /* Don't trigger the default scrolling behavior when the event is originating from this element
+  touch-action: none
+
+.react-colorful__pointer
+  position: absolute
+  z-index: 1
+  box-sizing: border-box
+  width: 28px
+  height: 28px
+  transform: translate(-50%, -50%)
+  background-color: #fff
+  border: 2px solid #fff
+  border-radius: 50%
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+
+.react-colorful__interactive:focus .react-colorful__pointer
+  transform: translate(-50%, -50%) scale(1.1)
+
+/* Chessboard-like pattern for alpha related elements
+
+.react-colorful__alpha, .react-colorful__alpha-pointer
+  background-color: #fff
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill-opacity=".05"><rect x="8" width="8" height="8"/><rect y="8" width="8" height="8"/></svg>')
+
+/* Display the saturation pointer over the hue one
+
+.react-colorful__saturation-pointer
+  z-index: 3
+
+/* Display the hue pointer over the alpha one
+
+.react-colorful__hue-pointer
+  z-index: 2
+
+
+
+// !!!!!!!!!!! END DEFAULT STYLES !!!!!!!!!!!!!!!
+
+
+
+
+
+.__template_common_picker_pointers
+  width: 1.25em
+  height: 1.25em
+
+.react-colorful
+  display: grid
+  grid-area: 1 / 1 / 5 / 13
+  @extend .grid_module_react-colorful
+
+
+.react-colorful__saturation
+  display: grid
+  grid-area: 1/1/4/5
+  cursor: pointer 
+  border: none 
+  border-radius: $radius_100 
+
+
+.react-colorful__hue
+  display: grid
+  grid-area: 4/1/4/5
+  align-self: center
+  height: 0.5em
+  cursor: pointer
+  border-radius: $radius_100
+
+
+
+.react-colorful__saturation-pointer
+  @extend .__template_common_picker_pointers
+
+.react-colorful__hue-pointer
+  @extend .__template_common_picker_pointers
+
+
+.colorPicker_input
+
+  display: grid
+  grid-area: 5/1/5/13
+  place-self: stretch
+  place-items: center
+
+  border-radius: $radius_100
+  background-color: $grey_70
+
+  .colorPicker_input_center
+    @extend .grid_colors_colorPicker_input
+    & input, span
+      display: grid
+      font: $font_colors_colorPicker_input
+      letter-spacing: 0.02em
+      color: $text_grey_40
+      background-color: transparent
+      align-self: stretch
+
+    & input
+      align-self: stretch
+      grid-area: right
+      justify-self: start
+      text-align: right
+      border: none
+      max-width: 3.75em
+
+    & span
+      align-self: center
+      grid-area: left
+      justify-self: start
+      cursor: default
+

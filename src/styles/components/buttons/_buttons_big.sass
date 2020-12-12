@@ -1,0 +1,22 @@
+@import "../../common/fonts"
+@import "../../common/colors"
+@import "../../common/borders"
+@import "../../common/transitions"
+
+
+.button_big__noStroke
+  grid-area: 8 / 3 / 8 / 11
+  place-self: stretch
+  font: $font_button_big
+  letter-spacing: 0.02em
+  color: $text_blue_40
+  border: none
+  transition: $transition_color_400
+
+  &:hover
+    color: $text_blue_35
+    transition: $transition_color_400
+
+  &:active
+    color: $text_blue_15
+    transition: $transition_color_100

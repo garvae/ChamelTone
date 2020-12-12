@@ -1,0 +1,89 @@
+@import "../../common/grids"
+@import '../../common/colors'
+@import '../../common/transitions'
+@import '../../common/fonts'
+@import '../../common/borders'
+@import '../../common/keyframes'
+
+
+.cssStylesModule_scrollWrap__textArea
+  display: grid
+  grid-area: 2 / 1 / 11 / 13
+  z-index: 0
+  font: $font_cssStyles_textArea
+  color: $text_grey_40
+  resize: none
+  padding: 1em 1em 3em 1em
+  background-color: $grey_82
+  border-radius: $radius_100
+  border: $border_100_tr
+  overflow-x: hidden
+  outline: none
+  transition: $transition_background_color_400 $transition_border_color_400
+
+
+  &:placeholder-shown
+    background-color: transparent
+    transition: $transition_background_color_400
+
+    + .cssStylesModule__placeholder
+      background-color: $grey_70
+      transition: $transition_background_color_400
+
+  &:hover
+    border: $border_100_b40
+    transition: $transition_border_color_400
+
+  &:active
+    background-color: $grey_82
+    transition: $transition_background_color_400 $transition_border_color_400
+    border: $border_100_b40
+
+  &:focus
+    background-color: $grey_82
+    transition: $transition_background_color_400 $transition_border_color_400
+    border: $border_100_b40
+
+
+.cssStylesModule__placeholder
+  display: grid
+  grid-area: 2 / 1 / 11 / 13
+  z-index: -0.2
+  font: $font_cssStyles_codeInputPlaceholder
+  color: $text_grey_40
+  place-self: stretch
+  place-items: center
+  text-align: center
+  background-color: $grey_82
+  border-radius: $radius_100
+  transition: $transition_background_color_400
+
+
+.cssStylesModule__errorMessage
+
+  display: grid
+  grid-area: 11 / 1 / 11 / 13
+  place-self: stretch
+  justify-items: center
+  padding-top: 1em
+  text-align: end
+  font: $font_cssStyles_errorMessage
+  color: transparent
+  transition: $transition_color_400
+
+.invalid
+  color: $red_50
+  transition: $transition_color_400
+
+
+.cssStylesModule__validMessage
+  @extend .cssStylesModule__errorMessage
+
+.valid
+  animation: 1.75s linear validMessageKeyframes
+
+
+
+
+
+

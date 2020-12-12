@@ -1,0 +1,36 @@
+@import "../components/buttons/toggle_dark_mode"
+@import "../components/text/title_dropDown"
+@import "../components/modules/module_dropDown"
+
+.__template__home_button
+  justify-self: center
+  align-self: center
+  padding: 0.25em
+
+  &:hover
+    color: $text_secondary_white
+
+  &:active
+    color: $text_blue_40
+
+.home_button__createTheme
+  grid-area: 7/3/9/11
+  @extend .__template__home_button
+  color: $text_blue_35
+
+
+.home_button__deleteTheme
+  grid-area: 8/3/10/11
+  @extend .__template__home_button
+
+.hideDelete
+  display: none
+
+.home_dropDownTheme
+  grid-area: 6/2/10/12
+
+
+.dropDownTitle
+  padding-bottom: 1em
+
+

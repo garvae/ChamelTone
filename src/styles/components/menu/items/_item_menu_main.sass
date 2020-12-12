@@ -1,0 +1,25 @@
+@import "../../../common/fonts"
+@import "../../../common/colors"
+@import "../../../common/transitions"
+
+
+
+.mainMenu__item
+  font: $font_main_menu_item
+  letter-spacing: 0.02em
+  color: $text_secondary_white
+  cursor: pointer
+
+  &:hover
+    color: $text_blue_40
+  &:active
+    color: $text_secondary_white
+    transition: $transition_color_100
+
+.mainMenu__separator
+
+  font: $font_main_menu_separator
+  letter-spacing: 0.02em
+  color: $text_grey_50
+  cursor: default
+

@@ -1,0 +1,57 @@
+@import "../../common/grids"
+@import '../../common/colors'
+@import '../../common/transitions'
+@import '../../common/fonts'
+
+.filters
+  grid-area: 3 / 1 / 11 / 13
+  @extend .grid_module_filters
+  display: grid
+
+  .brightness
+    grid-area: brightness
+  .contrast
+    grid-area: contrast
+  .grayscale
+    grid-area: grayscale
+  .sepia
+    grid-area: sepia
+  .hue
+    grid-area: hue
+  .invert
+    grid-area: invert
+  .saturation
+    grid-area: saturation
+
+.filters__item
+  @extend .grid_module_filters__item
+  display: grid
+  place-self: stretch
+
+
+  & span
+    display: grid
+    align-self: center
+    cursor: default
+    font: $font_module_menu_filter_name
+    color: $text_secondary_white
+
+    &#filterName
+      grid-column-start: left
+      grid-column-end: left
+      width: 8em
+
+    &#filterValue
+      grid-column-start: right
+      grid-column-end: right
+      width: 3em
+      text-align: right
+
+  & input
+    display: grid
+    grid-column-start: center
+    grid-column-end: center
+    width: 7em
+    align-self: center
+    cursor: pointer
+

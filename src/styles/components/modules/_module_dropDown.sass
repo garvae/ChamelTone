@@ -1,0 +1,318 @@
+@import "../../common/fonts"
+@import "../../common/colors"
+@import "../../common/icons"
+@import "../../common/borders"
+@import "../../common/measurements"
+@import "../../common/transitions"
+@import "../../common/grids"
+
+.__template__dotted_end_text_item
+  text-overflow: ellipsis
+  overflow: hidden
+  white-space: nowrap
+
+
+.dropDown
+  @extend .grid_4raw_12col
+  display: grid
+  grid-area: 6 / 2 / 10 / 12
+  border-radius: $radius_100
+  border-color: transparent
+
+
+.dropDown_header
+  @extend .grid_dropDown_header_item
+  grid-area: 1 / 1 / 1 / 13
+  background-color: $grey_82
+  border: $border_100_tr
+  //cursor: pointer
+  border-radius: $radius_100
+  transition: $transition_border_color_200
+  height: 42px
+  overflow: hidden
+
+
+
+
+
+.dropDown_header_current
+  @extend .grid_dropDown_header_item
+  max-height: $row_height
+  grid-area: 1 / 1 / 1 / 11
+  overflow: hidden
+
+
+.dropDown_header_current__item
+  @extend .__template__dotted_end_text_item
+  //width: 215px
+  width: 190px
+  grid-area: 1/2/1/4
+  font: $font_title_dropDown_selected
+  color: $text_grey_40
+  align-self: center
+  max-height: $row_height
+  cursor: default
+
+
+.dropDown_header__button
+  @extend .square_400
+  display: grid
+  grid-area: 1 / 11 / 1 / 13
+  justify-self: center
+  align-self: center
+  cursor: pointer
+
+  &:after
+    content: ''
+    mask: $icon_arrow_down_thin
+    mask-repeat: no-repeat
+    mask-position: center
+    transition: $transition_background_color_200
+
+  &:hover
+    &:after
+      transition: $transition_background_color_200
+
+  &:active
+    &:after
+      transition: $transition_background_color_200
+
+.dropDown_header__button.edit
+  display: grid
+  grid-area: 1 / 9 / 1 / 11
+
+  &:after
+    place-self: center
+    content: ''
+    width: 1.1em
+    height: 1.1em
+    mask: $icon_pencil_sw
+    mask-repeat: no-repeat
+    mask-position: center
+    mask-size: contain
+    transition: $transition_background_color_200
+
+  &:hover
+
+    &:after
+      transition: $transition_background_color_200
+
+  &:active
+
+    &:after
+      transition: $transition_background_color_200
+
+.dropDown_body
+  @extend .grid_dropDown_header_item
+  grid-area: 2 / 1 / 5 / 13
+  overflow: hidden
+
+
+.dropDown_body__item
+  @extend .grid_dropDown_header_item
+
+  display: grid
+  grid-column-start: 2
+  grid-column-end: 13
+  height: $row_height
+  place-self: stretch
+  cursor: pointer
+
+  & span
+    @extend .grid_dropDown_body_item
+    @extend .__template__dotted_end_text_item
+    width: 215px
+    grid-area: 1 / 2 / 1 / 5
+    font: $font_title_dropDown_selected
+    color: $text_grey_40
+
+  &:hover
+    background-color: $grey_70
+
+    & span
+      color: $blue_40
+
+  &:active
+    background-color: $grey_60
+
+    & span
+      color: $blue_40
+
+
+
+.dropDown
+  display: grid
+  border: none
+  background-color: transparent
+  transition: $transition_background_color_200
+  & div
+    transition: $transition_color_200
+
+  .dropDown_header
+    background-color: $grey_82
+    border-radius:   $radius_100
+    align-self: end
+
+  .dropDown_body
+    background-color: $grey_82
+    opacity: 0
+    border-radius:  0 0 $radius_100 $radius_100
+    pointer-events: none
+    transition: $transition_background_color_200
+
+.dropDown
+  &.open
+    .dropDown_header
+      border-radius:   $radius_100 $radius_100 0 0
+    .dropDown_body
+      display: grid
+      animation: scaleFromTop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+      pointer-events: all
+      transition: $transition_background_color_200
+
+.dropDown
+  &.closed
+    .dropDown_body
+      animation: scaleToTop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+      transition: $transition_background_color_200
+
+.dropDown_body__item
+  &.hidden
+    display: none
+
+.dropDown.edit_item
+  display: grid
+  grid-area: 1 / 1 / 1 / 13
+  justify-self: stretch
+  align-self: end
+  place-items: center
+  z-index: 2
+  background-color: $grey_82
+  height: 100%
+  max-height: 44px
+
+  @extend .grid_home_dropDown_edit
+
+  & input
+    display: grid
+    align-self: center
+    justify-self: start
+    width: 200px
+    padding-left: 0.9em
+    grid-area: input
+    border: none
+    background-color: transparent
+    color: $text_secondary_white
+    padding-bottom: 0.2em
+
+
+  & .edit_item__button
+    width: 2.75em
+    height: 100%
+    border: none
+    border-radius: 0 $radius_100 $radius_100 0
+    display: grid
+    align-self: center
+    justify-self: end
+    grid-area: button
+    cursor: pointer
+    //background-color: $grey_70
+
+    & span
+      place-self: center
+      width: 1.5em
+      height: 1.5em
+      background-color: $blue_40
+      mask: $icon_check_thin_sw
+      mask-repeat: no-repeat
+      mask-position: center
+      mask-size: contain
+      transition: $transition_background_color_200
+
+    &:hover
+      & span
+        background-color: $main_primary_white
+        transition: $transition_background_color_200
+
+    &:active
+      & span
+        background-color: $blue_35
+        transition: $transition_background_color_100
+
+  &:not(.visible)
+    display: none
+
+
+.dropDown_header
+  border: none
+  height: 44px
+
+
+.dropDown
+  .dropDown_header
+
+    &:hover
+      .edit
+        &::after
+          background-color: $grey_40
+      .drop
+        &::after
+          background-color: $main_primary_white
+
+    .edit
+      &::after
+        background-color: $grey_60
+      &:hover
+        &::after
+          background-color: $blue_40
+
+      &:active
+        &::after
+          background-color: $main_primary_white
+
+    .drop
+      &::after
+        background-color: $grey_40
+      &:hover
+        &::after
+          background-color: $blue_40
+      &:active
+        &::after
+          background-color: $main_primary_white
+
+
+.dropDownBodyHeight_1
+  @extend .grid_dropDown_2raw_12col
+  grid-area: 6 / 2 / 8 / 12
+
+  & .dropDown_body
+    grid-area: 2 / 1 / 2 / 13
+
+.dropDownBodyHeight_2
+  @extend .grid_dropDown_3raw_12col
+  grid-area: 6 / 2 / 9 / 12
+
+  & .dropDown_body
+    grid-area: 2 / 1 / 3 / 13
+
+.dropDownBodyHeight_3
+  @extend .grid_dropDown_4raw_12col
+  grid-area: 6 / 2 / 10 / 12
+
+  & .dropDown_body
+    grid-area: 2 / 1 / 4 / 13
+
+.dropDownBodyHeight_4
+  @extend .grid_dropDown_4raw_12col
+  grid-area: 6 / 2 / 10 / 12
+
+  & .dropDown_body
+    grid-area: 2 / 1 / 5 / 13
+
+
+
+
+
+
+
+

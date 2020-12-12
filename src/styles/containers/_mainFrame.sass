@@ -1,0 +1,34 @@
+@import "../common/colors"
+@import "../common/borders"
+@import "../common/grids"
+
+.mainFrame
+  @extend .grid_center
+  width: 360px
+  height: 600px
+  background-color: $grey_80
+  border-radius: $radius_100
+  overflow: hidden
+
+
+
+.pagesContainer
+  grid-area: center
+  display: grid
+  grid-template-columns: repeat(12, 1fr)
+  grid-template-rows: repeat(12, 1fr)
+  gap: $row_gap_12 $col_gap_12
+  grid-template-areas: ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . ."
+  width: 328px
+  height: 568px
+  background-color: $grey_80
+
+  &:before
+    content: ''
+    grid-area: 1 / 5 / 2 / 9
+    margin-top: -15%
+    width: 104px
+    min-width: 104px
+    max-width: 104px
+    background-color: $grey_82
+    border-radius: 0 0 $radius_100 $radius_100

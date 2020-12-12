@@ -1,0 +1,192 @@
+@import "../../common/grids"
+@import '../../common/colors'
+@import '../../common/transitions'
+@import '../../common/icons'
+@import '../../common/fonts'
+@import '../../common/borders'
+
+.modalSupport
+  display: grid
+  background-color: $grey_82
+  border-radius: 0 0 $radius_100 $radius_100
+  z-index: 2
+  grid-area: 1/1/14/13
+  @extend .grid_modals_modalSupport
+
+
+.modalSupport_icon
+  display: grid
+  grid-area: 2/1/4/5
+  justify-items: end
+  align-items: center
+  padding-top: 1em
+
+.modalSupport_description
+  display: grid
+  grid-area: 2/5/4/13
+  @extend .grid_modals_modalSupport_description
+  justify-items: start
+  align-items: center
+  padding-left: 0.5em
+  cursor: default
+  padding-top: 1em
+
+
+  & .modalSupport_description__first_line
+    grid-area: first
+    font: $font_modalSupport_description_primary
+    color: $text_blue_35
+    align-self: end
+
+  & .modalSupport_description__middle_line
+    grid-area: middle
+    font: $font_modalSupport_description_secondary
+    color: $text_secondary_white
+
+  & .modalSupport_description__last_line
+    grid-area: last
+    font: $font_modalSupport_description_secondary
+    color: $text_grey_40
+    align-self: start
+
+
+.modalSupport__title
+  grid-area: 5/1/5/13
+  place-self: center
+  font: $font_modalSupport_title
+  color: $text_secondary_white
+
+.modalSupport__link
+  display: grid
+  font: $font_modalSupport_link
+  color: $text_secondary_white
+  cursor: default
+  @extend .grid_modals_modalSupport_link
+
+
+  & span
+    align-self: center
+    justify-self: end
+    width: 1.5em
+    height: 1.5em
+    background-repeat: no-repeat
+
+
+  &#site
+    grid-area: 5/1/7/13
+    place-self: center
+    justify-items: start
+
+
+    & span
+      background-image: $icon_website_sw
+
+    & a, a:visited
+      padding-left: 0.5em
+      cursor: pointer
+      color: $text_blue_35
+      text-decoration: none
+      transition: $transition_color_200
+
+      &:hover
+        color: $text_secondary_white
+        transition: $transition_color_200
+
+      &:active
+        color: $text_secondary_white
+        transition: $transition_color_100
+
+  &#email
+    grid-area: 6/1/8/13
+    place-self: center
+    place-items: center
+    //justify-items: start
+    cursor: default
+    color: $text_blue_35
+
+    .email_container
+      @extend .grid_email_container
+      place-self: center
+
+      & #iconEmail
+        grid-area: left
+        background-image: $icon_email_sw
+
+      & #linkEmail
+        cursor: text
+        grid-area: right
+        padding-left: 0.5em
+
+
+  &#socials
+    grid-area: 7/1/11/13
+    align-self: center
+    @extend .grid_modals_modalSupport_socials
+
+    & a
+      width: 2.5em
+      height: 2.5em
+      background-repeat: no-repeat
+      background-size: cover
+      place-self: center
+      transition: $transition_filter_200
+      filter: brightness(0.9)
+
+      &:hover
+        filter: brightness(1.3)
+        transition: $transition_filter_200
+
+      &:active
+        filter: brightness(1.6)
+        transition: $transition_filter_100
+
+
+    & a#fb
+      grid-area: left
+      background-image: $icon_social_fb_color
+
+    & a#gh
+      grid-area: middle
+      background-image: $icon_social_gh_color
+
+    & a#vk
+      grid-area: right
+      background-image: $icon_social_vk_color
+
+
+.modalSupport_buttonDonate
+  grid-area: 10/3/12/11
+  & span
+    max-width: 1.2em
+    max-height: 1.2em
+    background-position: center
+    background-repeat: no-repeat
+
+
+.modalSupport__ButtonDescription
+  grid-area: 12/1/13/13
+  font: $font_buttonDonate_description
+  color: $text_grey_40
+  justify-items: center
+  align-items: start
+
+
+.bottomMenu_singleButton
+  grid-area: 13/1/13/13
+  @extend .grid_modals_modalSupport_bottomMenu
+
+  & #item
+    grid-area: right
+    align-self: start
+    justify-self: end
+    padding-right: 1.5em
+    color: $text_grey_50
+
+    &:hover
+      color: $text_blue_40
+
+    &:active
+      color: $text_blue_25
+      transition: $transition_color_100
+
+

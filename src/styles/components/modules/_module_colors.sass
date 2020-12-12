@@ -1,0 +1,98 @@
+@import "../../common/grids"
+@import '../../common/colors'
+@import '../../common/transitions'
+@import '../../common/fonts'
+@import "module_colorPicker"
+
+
+.colorsModule
+  display: grid
+  grid-area: 2 / 1 / 12 / 13
+  @extend .grid_module_colors
+
+.colorPicker
+  display: grid
+  grid-area: 1 / 1 / 13 / 13
+  @extend .grid_module_colors
+
+
+.colorsModule_colorsContainer
+  display: grid
+  grid-area: 6 / 1 / 13 / 13
+  @extend .grid_colors_colorsContainer
+
+  .color_1
+    grid-area: color_1
+  .color_2
+    grid-area: color_2
+  .color_3
+    grid-area: color_3
+  .color_4
+    grid-area: color_4
+  .color_5
+    grid-area: color_5
+  .color_6
+    grid-area: color_6
+
+.colorsModule_colorsContainer_item
+  @extend .grid_colorsContainer_item
+  cursor: pointer
+  transition: $transition_400
+
+  .colorsModule_colorsContainer_item__itemButton
+    display: grid
+    grid-area: item
+    place-self: center
+    border: $border_200_g60
+    width: (10em/4)
+    height: (10em/4)
+    border-radius: 50%
+    transition: $transition_400
+
+
+    & span
+      content: ''
+      display: grid
+      place-self: center
+      width: (8em/4)
+      height: (8em/4)
+      border-radius: 50%
+      //background-color: #45A1FF
+      transition: $transition_400
+
+  & p
+    display: grid
+    grid-area: name
+    place-self: center
+    place-items: center
+    place-content: center
+    font: $font_colors_colorName
+    color: $text_grey_40
+    transition: $transition_400
+
+
+  &:hover
+    .colorsModule_colorsContainer_item__itemButton
+      border-color: $grey_40
+      transition: $transition_400
+
+
+  &:active
+    .colorsModule_colorsContainer_item__itemButton
+      border-color: $main_primary_white
+      transition: $transition_100
+
+  .colorsModule_colorsContainer_item__itemButton.active
+    border-color: $main_primary_white
+    transition: $transition_100
+
+
+.colorsModule_colorsContainer_item
+  @extend .grid_colorsContainer_item
+  cursor: pointer
+  transition: $transition_400
+
+.colorsModule_colorsContainer_item__itemButton
+  .active
+    border-color: $main_primary_white
+    transition: $transition_100

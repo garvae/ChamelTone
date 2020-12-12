@@ -1,0 +1,22 @@
+@import '../buttons/checkbox_round'
+@import "../../common/grids"
+
+.bottomCheckboxes
+  @extend .grid_1raw_12col
+  grid-area: 11 / 1 / 11 / 13
+  place-self: stretch
+  place-items: center
+  align-items: end
+
+.checkbox_round
+  &.left
+    display: grid
+    grid-area: 1 / 1 / 1 / 5
+
+  &.right
+    display: grid
+    grid-area: 1 / 9 / 1 / 13
+
+  &.middle
+    display: grid
+    grid-area: 1 / 5 / 1 / 9

@@ -1,0 +1,59 @@
+@import "../../common/colors"
+@import "../../common/borders"
+@import "../../common/grids"
+@import "../../common/fonts"
+@import "../../common/icons"
+@import "../../common/transitions"
+
+.buttonDonate
+  font: $font_buttonDonate
+  color: $text_blue_35
+  justify-self: center
+  cursor: default
+
+
+.buttonDonate_button
+  @extend .grid_modals_buttonDonate
+  place-self: center
+  align-items: center
+  border: $border_100_b40
+  border-radius: 2em
+  padding: 0.75em
+  cursor: pointer
+  transition: $transition_color_200, $transition_background_color_200, $transition_border_color_200
+
+
+  &:hover
+    color: $text_primary_white
+    background-color: $blue_40
+    border-color: $blue_40
+    transition: $transition_color_200, $transition_background_color_200, $transition_border_color_200
+
+    & span
+      filter: contrast(1.2)
+      transition: $transition_filter_200
+
+
+  &:active
+    color: $text_primary_white
+    background-color: $blue_25
+    border-color: $blue_25
+    transition: $transition_color_100, $transition_background_color_100, $transition_border_color_100
+
+    & span
+      filter: brightness(1.8)
+      transition: $transition_filter_100
+
+
+  & span
+    display: grid
+    width: 1.5em
+    height: 1.5em
+    padding-right: 0.25em
+    background-repeat: no-repeat
+    background-size: contain
+    background-image: $icon_heart
+    transition: $transition_filter_200
+
+  #text
+    padding-left: 0.5em

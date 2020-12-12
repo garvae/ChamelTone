@@ -1,0 +1,89 @@
+@import "../../common/colors"
+@import "../../common/measurements"
+@import "../../common/duration"
+@import "../../common/fonts"
+@import "../../common/borders"
+@import "../../common/grids"
+
+
+// ************************************************* MAIN_TOGGLE
+
+.darkMode
+  @extend .grid_1raw_12col
+  grid-area: 3 / 1 / 3 /13
+
+
+.darkMode__title#title
+  display: grid
+  grid-area: 1 / 2 / 1 / 10
+  justify-self: center
+  align-self: center
+  font: $font_title_darkMode
+  color: $text_primary_white
+  cursor: default
+
+
+// ..................................... TOGGLE
+
+.darkMode_toggle
+  position: relative
+  //display: inline-block
+  display: grid
+  grid-area: 1 / 10 / 1 / 12
+  justify-self: center
+  align-self: center
+  width: $darkMode_toggle__width
+  height: $darkMode_toggle__height
+
+
+.darkMode_toggle__slider
+  position: absolute
+  cursor: pointer
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: $grey_82
+  -webkit-transition: $transition_400
+  transition: $transition_400
+  border: $border_slider
+  border-radius: $radius_slider
+
+  &:before
+    position: absolute
+    content: ""
+    height: $darkMode_slider_point__size
+    width: $darkMode_slider_point__size
+    left: $darkMode_slider_point__left
+    bottom: $darkMode_slider_point__bottom
+    background-color: $blue_40
+    -webkit-transition: $transition_400
+    transition: $transition_400
+    border-radius: 50%
+
+  &:hover
+    background-color: $grey_80
+    border-color: $blue_40
+
+    &:before
+      background-color: $blue_40
+
+.darkMode_toggle__checkbox
+  opacity: 0
+  width: 0
+  height: 0
+
+  &:checked + .darkMode_toggle__slider
+    background-color: $grey_80
+    border-color: $blue_40
+
+    &:before
+      -webkit-transform: $darkMode_slider__transform
+      -ms-transform: $darkMode_slider__transform
+      transform: $darkMode_slider__transform
+      background-color: $main_primary_white
+
+    &.darkMode_toggle__slider:hover
+      background-color: $grey_82
+      border-color: $blue_35
+

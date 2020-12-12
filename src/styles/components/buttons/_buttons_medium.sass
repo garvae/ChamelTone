@@ -1,0 +1,21 @@
+@import "../../common/fonts"
+@import "../../common/colors"
+@import "../../common/borders"
+@import "../../common/transitions"
+
+
+.button_medium__noStroke
+  place-self: stretch
+  font: $font_button_medium
+  letter-spacing: 0.02em
+  color: $text_grey_50
+  border: none
+  transition: $transition_color_400
+
+  &:hover
+    color: $text_blue_35
+    transition: $transition_color_400
+
+  &:active
+    color: $text_blue_15
+    transition: $transition_color_100

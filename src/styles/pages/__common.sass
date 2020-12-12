@@ -1,0 +1,24 @@
+@import "../components/menu/menu_top"
+@import "../components/buttons/buttons_big"
+@import "../components/buttons/buttons_medium"
+@import "../components/menu/menu_bottom"
+@import "../components/menu/menu_checkboxes"
+@import "../components/text/title"
+@import "../common/keyframes"
+
+
+
+.mainFrame_backDark
+  grid-area: 1/1/13/13
+  z-index: 1.9
+  background-color: $grey_70
+  transition: $transition_opacity_200
+  display: none
+
+.mainFrame_backDark.showBackDark
+  display: grid
+  animation: showBackDark 0.4s linear both
+
+.mainFrame_backDark.hideBackDark
+  display: grid
+  animation: hideBackDark 0.4s linear both

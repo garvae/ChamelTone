@@ -1,0 +1,405 @@
+@import "../common/grids"
+@import "../common/colors"
+@import "../common/icons"
+@import "../common/fonts"
+@import "../common/borders"
+@import "../common/transitions"
+@import "../common/keyframes"
+
+
+.topMenu.manualStart
+  & #home_static,
+  #home_hover,
+  #donate,
+  #site,
+  #lang_static,
+  #lang_hover,
+  #support,
+  #share_static,
+  #share_hover
+    display: none
+
+.topMenu.topMenu_manual
+  pointer-events: none
+
+
+.topMenu.currentManual_1,
+.topMenu.currentManual_2,
+.topMenu.currentManual_3,
+.topMenu.currentManual_4
+  display: none
+
+.topMenu.currentManual_5
+  .topMenu__Icon
+    &:not(#support)
+      display: none
+
+.topMenu.currentManual_6
+  .topMenu__Icon
+    &:not(#lang_static)
+      display: none
+
+.topMenu.currentManual_7
+  .topMenu__Icon
+    &:not(#home_static)
+      display: none
+
+.topMenu.currentManual_8
+  .topMenu__Icon
+    &:not(#donate)
+      display: none
+
+
+.manual_chameltoneLogoNoFrame.manualStart
+  display: grid
+  grid-area: 3/1/7/13
+  place-self: stretch
+  place-items: center
+  animation: manualStart_logoIn 0.9s both
+
+  & span
+    display: grid
+    background-size: contain
+    background-repeat: no-repeat
+    background-image: $icon_chameltone_noFrame_blue_40
+    height: 12em
+    width: 12em
+    animation: manualStart_logo_anim 2s infinite both
+
+
+.manualStart_textBlock
+  display: grid
+  grid-area: 7/1/10/13
+  place-self: center
+  place-items: center
+  @extend .grid_manual_manualStart_text
+  animation: manualStart_bounceIn 0.9s both
+
+
+.manual_title_manualStart
+  display: grid
+  color: $text_secondary_white
+  place-self: center
+  font: $font_manual_text
+
+  &.line_1
+    grid-area: 1/1/1/3
+    padding-bottom: 0.25em
+
+  &.line_2
+    grid-area: left
+    justify-self: end
+    padding-right: 0.3em
+
+
+  &.line_3
+    grid-area: right
+    justify-self: start
+    color: $text_blue_35
+    font: $font_manual_bold
+
+
+.button_big__stroke.manualStart
+  display: grid
+  grid-area: 10/1/12/13
+  place-self: center
+  font: $font_manual_button
+  color: $text_blue_35
+  border: $border_100_b35
+  border-radius: $radius_100
+  padding: 0.5em 1em 0.5em 1em
+  transition: $transition_color_200, $transition_background-color_200, $transition_border-color_200,
+  animation: manualStart_button_fadeIn 0.9s 0.5s both
+
+  &:hover
+    color: $text_secondary_white
+    background-color: $blue_40
+    border-color: $blue_40
+    transition: $transition_color_200, $transition_background-color_200, $transition_border-color_200,
+
+  &:active
+    color: $text_primary_white
+    background-color: $blue_35
+    border-color: $blue_35
+    transition: $transition_color_100, $transition_background-color_100, $transition_border-color_100,
+
+.button_big__noStroke.manualStart
+  display: grid
+  grid-area: 12/1/12/13
+  justify-self: center
+  align-self: start
+  font: $font_manual_buttonSkip
+  color: $text_grey_50
+  transition: $transition_color_200
+  animation: manualStart_button_fadeIn 0.9s 1s both
+
+  &:hover
+    color: $text_blue_35
+    transition: $transition_color_200
+
+  &:active
+    color: $text_primary_white
+    transition: $transition_color_100
+
+
+.manual_sliderDots
+  display: grid
+  z-index: 2
+  grid-area: 3/2/3/12
+  place-self: stretch
+  place-items: center
+  @extend .grid_manual_sliderDots
+
+  & span
+    display: grid
+    width: 0.75em
+    height: 0.75em
+    background-color: $grey_60
+    border-radius: 50%
+    cursor: pointer
+    transition: $transition_background_200
+
+    &:hover
+      background-color: $blue_40
+      transition: $transition_background_200
+
+    &:active
+      background-color: $blue_35
+      transition: $transition_background_100
+
+  .active
+    background-color: $blue_40
+    transition: $transition_background_100
+
+
+.manual_sliderButton
+  display: none
+  place-self: stretch
+  place-items: center
+  opacity: 0
+  transition: $transition_opacity_200
+
+  &.active
+    display: grid
+    opacity: 1
+    transition: $transition_opacity_200
+
+  & span
+    display: grid
+    width: 1.25em
+    height: 2.5em
+    mask: $icon_slider_button_arrow_g50
+    background-color: $grey_50
+    cursor: pointer
+    transition: $transition_background-color_200
+
+    &:hover
+      background-color: $blue_40
+      transition: $transition_background-color_200
+
+    &:active
+      background-color: $blue_35
+      transition: $transition_background-color_100
+
+.manual_sliderButton_left
+  grid-area: 6/1/8/1
+
+  & span
+    transform: rotate(180deg)
+
+.manual_sliderButton_right
+  grid-area: 6/12/8/12
+
+
+.bottomCheckboxes.manual
+  pointer-events: none
+
+  &:not(.currentManual_4)
+    display: none
+
+.mainMenu.bottomMenu.manual
+  pointer-events: none
+  @extend .grid_manuals_3item_no_sep_menu
+
+  & .mainMenu__item.left
+    justify-self: center
+    display: grid
+    grid-area: left
+  & .mainMenu__item.middle
+    justify-self: center
+    display: grid
+    grid-area: middle
+  & .mainMenu__item.right
+    justify-self: center
+    display: grid
+    grid-area: right
+
+  &:not(.currentManual_1)
+    & .mainMenu__item.left
+      opacity: 0
+
+  &:not(.currentManual_2)
+    & .mainMenu__item.middle
+      opacity: 0
+
+  &:not(.currentManual_3)
+    & .mainMenu__item.right
+      opacity: 0
+
+  & #separator
+    opacity: 0
+
+
+.manual_pointers__pointer
+  display: none
+  place-self: stretch
+  align-items: end
+  justify-items: center
+
+  & span
+    display: grid
+    mask: $icon_manual_pointer_arrow_pw
+    mask-repeat: no-repeat
+    mask-size: contain
+    background-color: $main_primary_white
+    width: 1.5em
+    height: 1.5em
+    max-width: 20px
+    animation: manual_pointer 0.5s ease-in-out infinite alternate-reverse both
+
+.manual_pointers__pointer_1.currentManual_1
+  display: grid
+  grid-area: 11/1/11/5
+
+.manual_pointers__pointer_1.currentManual_2
+  display: grid
+  grid-area: 11/5/11/9
+
+.manual_pointers__pointer_1.currentManual_3
+  display: grid
+  grid-area: 11/9/11/13
+
+.manual_pointers__pointer_1.currentManual_4
+  animation: manual_pointer_sync 0.5s ease-in-out infinite alternate-reverse both
+  display: grid
+  grid-area: 10/1/10/5
+
+  & span
+    animation: manual_pointer_sync_background 0.5s ease-in-out infinite alternate-reverse both
+
+
+.manual_pointers__pointer_2.currentManual_4
+  animation: manual_pointer_sync 0.5s ease-in-out infinite alternate-reverse both
+  display: grid
+  grid-area: 10/5/10/9
+
+  & span
+    animation: manual_pointer_sync_background 0.5s ease-in-out infinite alternate-reverse both
+
+.manual_pointers__pointer_3.currentManual_4
+  animation: manual_pointer_sync 0.5s ease-in-out infinite alternate-reverse both
+  display: grid
+  grid-area: 10/9/10/13
+
+  & span
+    animation: manual_pointer_sync_background 0.5s ease-in-out infinite alternate-reverse both
+
+
+.manual_pointers__pointer_1.currentManual_5
+  display: grid
+  grid-area: 2/11/2/12
+  transform: rotate(180deg)
+  //padding-left: 0.4em
+
+.manual_pointers__pointer_1.currentManual_6
+  display: grid
+  grid-area: 2/9/2/11
+  transform: rotate(180deg)
+
+.manual_pointers__pointer_1.currentManual_7
+  display: grid
+  grid-area: 2/1/2/1
+  transform: rotate(180deg)
+
+.manual_pointers__pointer_1.currentManual_8
+  display: grid
+  grid-area: 2/2/2/5
+  transform: rotate(180deg)
+
+.manual_pointers__pointer_2.currentManual_8
+  display: grid
+  grid-area: 12/1/12/13
+  transform: rotate(180deg)
+
+.manual_textBlock
+  display: grid
+  z-index: 1
+  grid-area: 3/2/11/12
+  place-self: stretch
+  place-items: center
+  color: $text_primary_white
+  font: $font_manual_text_manual
+  text-align: center
+  line-height: 1.4
+  white-space: pre-wrap
+
+  & span
+    color: $text_blue_35
+    padding-left: 0.3em
+    padding-right: 0.3em
+
+.manual_textBlock__item.easeInFromRight
+  animation: manual_textBlock__item_fadeIn 0.4s ease-in both
+
+.manual_textBlock
+  & .currentManual_8
+    white-space: pre-line
+
+.manual_textBlock
+  & .currentManual_3
+    & span
+      padding-left: 0
+      padding-right: 0
+
+
+
+.button_big__stroke.manual
+
+  display: grid
+  z-index: 2
+  grid-area: 10/2/12/12
+  place-self: center
+  place-items: center
+  color: $text_blue_35
+  font: $font_manual_8_button
+  border: $border_100_b35
+  padding: 0.5em 1em 0.5em 1em
+  border-radius: $radius_100
+  transition: $transition_background_200, $transition_color_200, $transition_border_color_200
+
+  &:hover
+    background-color: $blue_40
+    border-color: $blue_40
+    color: $text_primary_white
+    transition: $transition_background_200, $transition_color_200, $transition_border_color_200
+
+
+  &:active
+    background-color: $blue_25
+    border-color: $blue_25
+    color: $text_primary_white
+    transition: $transition_background_100, $transition_color_100, $transition_border_color_100
+
+
+.button_big__stroke.manual
+  display: none
+.button_big__stroke.currentManual_8,
+.button_big__stroke.manualStart
+  display: grid
+
+
+.manual_textBlock__item
+  text-align: center
+  place-items: center
+  place-self: center
+

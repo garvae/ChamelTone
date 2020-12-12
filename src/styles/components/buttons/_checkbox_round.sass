@@ -1,0 +1,54 @@
+@import "../../common/colors"
+@import "../../common/borders"
+@import "../../common/grids"
+@import "../../common/transitions"
+
+
+.checkbox_round
+
+  label
+    display: grid
+    place-self: center
+    background-color: $grey_80
+    border: $border_200 $grey_60
+    border-radius: 50%
+    cursor: pointer
+    @extend .square_200
+    transition: 0.4s
+
+    &:after
+      display: grid
+      place-self: center
+      border: 2px solid $blue_40
+      border-top: none
+      border-right: none
+      content: ""
+      height: 0.25em
+      opacity: 0
+      transform: rotate(-45deg)
+      width: 0.5em
+      transition: $transition_opacity_400
+
+    &:hover
+      border-color: $blue_25
+      background-color: $grey_80
+
+  input[type="checkbox"]
+    display: none
+
+    &:checked + label
+      background-color: $grey_80
+      //border-color: $blue_40
+      transition: 0.4s
+
+      &:after
+        opacity: 1
+        transition: $transition_opacity_400
+
+    &:checked:hover + label
+      background-color: $grey_82
+      border-color: $blue_25
+      transition: 0.4s
+
+      &:after
+        border-color: $blue_40

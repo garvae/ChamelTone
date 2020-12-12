@@ -1,0 +1,225 @@
+@import "icons"
+@import "colors"
+
+@keyframes homeHoverOut
+  0%
+    mask: $home_hover
+    opacity: 1
+  50%
+    mask: $home_hover
+    opacity: 0.8
+  51%
+    mask: $home_static
+    opacity: 0.6
+  100%
+    mask: $home_static
+    opacity: 1
+
+
+@keyframes langHoverOut
+  0%
+    mask: $lang_hover
+    opacity: 1
+  50%
+    mask: $lang_hover
+    opacity: 0.8
+  51%
+    mask: $lang_static
+    opacity: 0.6
+  100%
+    mask: $lang_static
+    opacity: 1
+
+@keyframes shareHoverOut
+  0%
+    mask: $share_hover
+    opacity: 1
+  50%
+    mask: $share_hover
+    opacity: 0.8
+  51%
+    mask: $share_static
+    opacity: 0.6
+  100%
+    mask: $share_static
+    opacity: 1
+
+@keyframes validMessageKeyframes
+  0%
+    color: transparent
+  20%
+    color: transparent
+  50%
+    color: $blue_40
+  70%
+    color: $blue_40
+  100%
+    color: transparent
+
+
+@keyframes manual_pointer
+  0%
+    transform: translateY(-0.75em)
+    background-color: $blue_40
+
+  100%
+    transform: translateY(0.75em)
+    background-color: $main_primary_white
+
+@keyframes manual_pointer_sync
+  0%
+    transform: translateY(-0.75em)
+
+  100%
+    transform: translateY(0.75em)
+
+@keyframes manual_pointer_sync_background
+  0%
+    background-color: $blue_40
+
+  100%
+    background-color: $main_primary_white
+
+@keyframes manual_textBlock__item_fadeIn
+  0%
+    opacity: 0.6
+
+  100%
+    opacity: 1
+
+@keyframes manualStart_button_fadeIn
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+
+
+@keyframes manualStart_bounceIn
+  0%
+    transform: translateY(-3em)
+    animation-timing-function: ease-in
+    opacity: 1
+
+  24%
+    opacity: 1
+
+  40%
+    transform: translateY(-1em)
+    animation-timing-function: ease-in
+
+  65%
+    transform: translateY(-0.5em)
+    animation-timing-function: ease-in
+
+  82%
+    transform: translateY(-0.25em)
+    animation-timing-function: ease-in
+
+  93%
+    transform: translateY(-0.15em)
+    animation-timing-function: ease-in
+
+  25%,
+  55%,
+  75%,
+  87%
+    transform: translateY(0em)
+    animation-timing-function: ease-out
+
+  100%
+    transform: translateY(0em)
+    animation-timing-function: ease-out
+    opacity: 1
+
+
+
+@keyframes manualStart_logo_anim
+  0%
+    transform: scale3d(1, 1, 1)
+
+  50%
+    transform: scale3d(1, 1, 1)
+
+  55%
+    transform: scale3d(1.1, 0.9, 1)
+
+  65%
+    transform: scale3d(0.9, 1.1, 1)
+
+  75%
+    transform: scale3d(1.05, 0.95, 1)
+
+  85%
+    transform: scale3d(0.95, 1.05, 1)
+
+  90%
+    transform: scale3d(1.05, 0.95, 1)
+
+  100%
+    transform: scale3d(1, 1, 1)
+
+@keyframes manualStart_logoIn
+  0%
+    transform: translateX(1000px)
+    opacity: 0
+
+  100%
+    transform: translateX(0)
+    opacity: 1
+
+@keyframes scaleFromTop
+  0%
+    transform: scaleY(0)
+    transform-origin: 100% 0
+    opacity: 1
+
+  100%
+    transform: scaleY(1)
+    transform-origin: 100% 0
+    opacity: 1
+
+
+@keyframes scaleToTop
+  0%
+    transform: scaleY(1)
+    transform-origin: 100% 0
+    opacity: 1
+
+  100%
+    transform: scaleY(0)
+    transform-origin: 100% 0
+    opacity: 0
+    display: none
+
+@keyframes slideModalFromTop
+  0%
+    transform: translateY(-600px)
+    opacity: 0
+  100%
+    transform: translateY(0)
+    opacity: 1
+
+
+@keyframes slideModalToTop
+  0%
+    transform: translateY(0)
+    opacity: 1
+
+  100%
+    transform: translateY(-600px)
+    opacity: 0
+
+@keyframes showBackDark
+  0%
+    opacity: 0
+  100%
+    opacity: 0.6
+
+
+@keyframes hideBackDark
+  0%
+    opacity: 0.6
+  100%
+    opacity: 0

@@ -1,0 +1,103 @@
+@import "../../common/grids"
+@import '../../common/colors'
+@import '../../common/fonts'
+@import '../../common/borders'
+@import '../../common/icons'
+@import '../../common/transitions'
+
+.modalShare
+  //display: none
+  background-color: $grey_82
+  border-radius: 0 0 $radius_100 $radius_100
+  z-index: 2
+  grid-area: 1/1/7/13
+  @extend .grid_modals_modalShare
+
+
+.modalShare_title
+  display: grid
+  grid-area: 2/1/3/13
+  place-self: stretch
+  place-items: center
+  cursor: default
+  color: $text_secondary_white
+  font: $font_modalShare_title
+
+.modalShare_socials
+  display: grid
+  grid-area: 3/1/6/13
+  padding: 0 1em 0.5em 1em
+  @extend .grid_modals_modalShare_socials
+
+  & .modalShare_socials_icon
+    //@extend .grid_modals_modalShare_socials_icons
+    display: grid
+    place-self: center
+    place-items: center
+    place-content: center
+    //grid-area: center
+    width: $share_icon_size
+    //max-width: $share_icon_size
+    //min-width: $share_icon_size
+    height: $share_icon_size
+    //max-height: $share_icon_size
+    //min-height: $share_icon_size
+    border-radius: 50%
+    color: transparent
+    transition: $transition_filter_200
+    font-size: 24px
+
+
+    //&#fb
+    //  background-image: $icon_social_fb
+    //&#vk
+    //  background-image: $icon_social_vk
+    //&#gp
+    //  background-image: $icon_social_gp
+    //&#tw
+    //  background-image: $icon_social_tw
+    //&#re
+    //  background-image: $icon_social_re
+    //&#ok
+    //  background-image: $icon_social_ok
+    //&#li
+    //  background-image: $icon_social_li
+    //&#pi
+    //  background-image: $icon_social_pi
+    //&#ma
+    //  background-image: $icon_social_ma
+    //&#tu
+    //  background-image: $icon_social_tu
+
+    //&:hover
+    //  filter: brightness(1.4)
+    //  transition: $transition_filter_200
+    //
+    //&:active
+    //  filter: brightness(1.8)
+    //  transition: $transition_filter_100
+
+
+
+
+.modalShare_centerSingleButton
+  display: grid
+  grid-area: 6/1/6/13
+  place-self: stretch
+  justify-items: center
+  align-items: start
+
+
+  & #item
+    display: grid
+    color: $text_grey_60
+    font: $font_modalShare_centerSingleButton
+
+
+    &:hover
+      color: $text_blue_40
+
+    &:active
+      color: $text_blue_15
+
+

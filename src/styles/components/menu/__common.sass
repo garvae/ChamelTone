@@ -1,0 +1,57 @@
+@import '../../common/colors'
+@import '../../common/transitions'
+
+.mainMenu__item__template
+  &.left
+    grid-area: left
+    justify-self: center
+    color: $text_grey_50
+    &:hover
+      color: $text_blue_35
+    &:active
+      color: $text_secondary_white
+      transition: $transition_color_100
+  &.middle
+    grid-area: center
+    justify-self: center
+    color: $text_grey_40
+    &:hover
+      color: $text_blue_35
+    &:active
+      color: $text_secondary_white
+      transition: $transition_color_100
+  &.right
+    grid-area: right
+    justify-self: center
+    color: $text_blue_35
+    &:hover
+      color: $text_primary_white
+    &:active
+      color: $text_blue_25
+      transition: $transition_color_100
+
+.__template__filters_and_colors_menu
+  @extend .grid_2item_menu
+
+  .mainMenu__item
+    &.left
+      grid-area: left
+      justify-self: left
+      padding-left: 1em
+      color: $text_grey_50
+      &:hover
+        color: $text_blue_35
+      &:active
+        color: $text_secondary_white
+        transition: $transition_color_100
+
+    &.right
+      grid-area: right
+      justify-self: right
+      padding-right: 1em
+      color: $text_blue_35
+      &:hover
+        color: $text_primary_white
+      &:active
+        color: $text_blue_25
+        transition: $transition_color_100

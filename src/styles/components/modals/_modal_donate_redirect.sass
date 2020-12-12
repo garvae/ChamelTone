@@ -1,0 +1,123 @@
+@import "../../common/grids"
+@import '../../common/colors'
+@import '../../common/transitions'
+@import '../../common/icons'
+@import '../../common/fonts'
+@import '../../common/borders'
+
+$logo_logoWithHeart_size: 10em
+
+.modalDonateRedirect
+  display: grid
+  background-color: $grey_82
+  border-radius: 0 0 $radius_100 $radius_100
+  z-index: 3
+  grid-area: 1/1/14/13
+  width: 328px
+  @extend .grid_modals_modalDonateRedirect
+
+.modalDonateRedirect__logo
+  display: grid
+  grid-area: 2/1/7/13
+
+  & span
+    display: grid
+    place-self: center
+    width: $logo_logoWithHeart_size
+    height: $logo_logoWithHeart_size
+    background-repeat: no-repeat
+    background-size: contain
+    background-image: $logo_logoWithHeart
+
+
+.modalDonateRedirect_description
+  display: grid
+  grid-area: 8/1/11/13
+  @extend .grid_modals_modalDonateRedirect_description
+  place-items: center
+  cursor: default
+
+
+  & .modalDonateRedirect_description__first_line
+    grid-area: first
+    font: $font_modalDonateRedirect_description_primary
+    color: $text_blue_35
+
+  & .modalDonateRedirect_description__middle_line
+    grid-area: middle
+    font: $font_modalDonateRedirect_description_secondary
+    color: $text_secondary_white
+
+  & .modalDonateRedirect_description__last_line
+    display: grid
+    grid-area: last
+    @extend .grid_modals_modalDonateRedirect_description_lastLine
+
+
+    & .modalDonateRedirect_description__last_line_first
+
+      grid-area: first
+      font: $font_modalDonateRedirect_description_secondary
+      color: $text_secondary_white
+
+    & .modalDonateRedirect_description__last_line_last
+
+      grid-area: last
+      font: $font_modalDonateRedirect_description_bold
+      color: $text_blue_35
+      padding-left: 0.3em
+
+
+.modalDonateRedirect_timer
+  display: grid
+  grid-area: 10/1/10/13
+  place-self: stretch
+  place-items: center
+  font: $font_modalDonateRedirect_buttonRedirect_count
+  color: $text_blue_40
+  cursor: default
+
+.modalDonateRedirect
+  .button_big__stroke
+    display: grid
+    grid-area: 10/1/10/13
+    place-self: center
+    font: $font_modalDonateRedirect_buttonRedirect
+    color: $blue_40
+    border: $border_100_b40
+    padding: 0.75em
+    border-radius: 2em
+
+
+
+
+.modalDonateRedirect_centerSingleButton
+  display: grid
+  grid-area: 11/1/11/13
+
+  & #item
+    color: $text_grey_60
+    font: $font_modalDonateRedirect_centerSingleButton
+
+    &:hover
+      color: $text_blue_40
+
+    &:active
+      color: $text_blue_25
+
+
+
+.modalDonateRedirect__bottomDescription
+  display: grid
+  grid-area: 12/1/14/13
+  font: $font_modalDonateRedirect_bottomDescription
+  color: $text_grey_50
+  place-self: center
+  place-items: center
+  text-align: center
+  & span
+    place-self: center
+    place-items: center
+    text-align: center
+
+
