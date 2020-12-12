@@ -155,9 +155,10 @@ build_chrome
 This extension **built with love**, but I am aware of the **need to refactor** this application. But I started to do it 8 months ago with minimal programming skills and at the start of my "programming way" had no idea how to do this better 😅.
 I am planning further refactorings and optimizations.
 I would like to refactor:
-- redux logic. it turned out to be too heavy and contains errors.
-- the logic of the background page. There is extra code that can be shortened and logic enhanced.
-- the application has a very heavy ["csstree-validator"](https://github.com/csstree/validator) library. It doubles the weight of the entire application. This library uses MDN libraries to validate user-submitted CSS code. The library is too old and needs to be replaced.
+- redux logic. it turned out to be too heavy and contains errors
+- in sass styles it is necessary to replace most of the "@import" rules with "@use" to avoid unwanted double use
+- the logic of the background page. There is extra code that can be shortened and logic enhanced
+- the application has a very heavy ["csstree-validator"](https://github.com/csstree/validator) library. It doubles the weight of the entire application. This library uses MDN libraries to validate user-submitted CSS code. The library is too old and needs to be replaced
 
 ***I would love to hear your suggestions for improvements. Contact me on social networks.***
 
