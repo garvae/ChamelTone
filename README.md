@@ -88,7 +88,7 @@ ChamelTone is an browser extension built for ***Mozilla Firefox*** and ***Google
 1. Build the extension
 
 ```sh
-build_firefox
+npm run build_firefox
 ```
 
 2. Open debugging page: <about:debugging#/runtime/this-firefox>
@@ -106,7 +106,7 @@ build_firefox
 1. Build the extension
 
 ```sh
-build_chrome
+npm run build_chrome
 ```
 
 2. Open extensions page: <chrome://extensions/>
