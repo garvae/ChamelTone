@@ -53,7 +53,11 @@ Although the essence is similar, because we have:
 - request-processing background page (like backend)
 - result of user interaction and background processing (resulting application state)
 
+<br/>
+
 The interaction scheme is approximately as follows:
+
+<br/>
 
 <p align="center">
     <img src="https://github.com/garvae/ChamelTone/blob/main/public/github/app_process_scheme.jpg" alt="app_process_scheme" style="max-width:100%" width="950" height="407">
@@ -148,9 +152,12 @@ build_chrome
 
 ## P.S
 
-<p align="center">
-    <img src="https://github.com/garvae/ChamelTone/blob/main/public/github/gh_logo_with_heart_text.png" alt="Logo_banner" style="max-width:100%" width="413" height="369">
-</p>
+<br/>  
+
+<p align="center">  
+    <img src="https://github.com/garvae/ChamelTone/blob/main/public/github/gh_logo_with_heart_text.png" alt="Logo_banner" style="max-width:100%" width="413" height="369">  
+</p>  
+
 
 This extension **built with love**, but I am aware of the **need to refactor** this application. But I started to do it 8 months ago with minimal programming skills and at the start of my "programming way" had no idea how to do this better 😅.
 I am planning further refactorings and optimizations.
@@ -201,7 +208,7 @@ Give a  ⭐ and your ❤️ if this project helped you!
 <br/>
 <br/>
 
-❤️️<a href="https://www.patreon.com/garvae">
+<a href="https://www.patreon.com/garvae">
   <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
 </a>
 
