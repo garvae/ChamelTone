@@ -1,10 +1,13 @@
 
 <p align="center"><h1 align="center">ChamelTone 💙</h1></p>
 
+
+<br/>
+<br/>
+
 <p align="center">
     <img src="https://github.com/garvae/ChamelTone/blob/main/public/github/gh_banner_en.png" alt="Logo_banner" style="max-width:100%" width="828" height="316">
-</p>
-
+</p>  
 
 
 <p align="center">
@@ -23,7 +26,11 @@
 <br/>
 <br/>  
 
-> A browser extension that allows you to apply automatic &#34;dark mode&#34; and manually change the color styles of any pages. The extension analyzes the current domain and applies the saved user settings for the current domain, if any. The user can use CSS filters, 6 ways to change the color of text and background elements, and the extension allows you to enter CSS code.
+<p align="center" style="text-align: center">
+   A browser extension that allows you to apply automatic &#34;dark mode&#34; and manually change the color styles of any pages. The extension analyzes the current domain and applies the saved user settings for the current domain, if any. The user can use CSS filters, 6 ways to change the color of text and background elements, and the extension allows you to enter CSS code.
+</p>
+
+
 
 <br/>
 <br/>
@@ -127,6 +134,9 @@ build_chrome
             - locales (note # 2 below)
         - store (redux configuration)
         - styles
+
+<br/>
+
 
 > Note #1: **"darkMode_presets"** contains special "manually configured" presets for some websites with a very complex structure. For such sites, the ChamelTone built-in logic of "Smart Dark Mode" puts too much load on the processor. Therefore, for some sites (we can expand the base of such sites), pre-generated presets are automatically applied. This optimizes performance.
 
