@@ -6,7 +6,8 @@
 <br/>
 
 <p align="center">
-    <img src="https://github.com/garvae/ChamelTone/blob/main/public/github/gh_banner_en.png" alt="Logo_banner" style="max-width:100%" width="828" height="316">
+    <img src="https://github.com/garvae/ChamelTone/raw/main/public/github/gh_banner_en.png" alt="Logo_banner" style
+    ="max-width:100%" width="828" height="316">
 </p>  
 
 
@@ -60,7 +61,7 @@ The interaction scheme is approximately as follows:
 <br/>
 
 <p align="center">
-    <img src="https://github.com/garvae/ChamelTone/blob/main/public/github/app_process_scheme.jpg" alt="app_process_scheme" style="max-width:100%" width="850" height="365">
+    <img src="https://github.com/garvae/ChamelTone/raw/main/public/github/app_process_scheme.jpg" alt="app_process_scheme" style="max-width:100%" width="850" height="365">
 </p>
 <br/>
 <br/>  
@@ -155,7 +156,7 @@ npm run build_chrome
 <br/>  
 
 <p align="center">  
-    <img src="https://github.com/garvae/ChamelTone/blob/main/public/github/gh_logo_with_heart_text.png" alt="Logo_banner" style="max-width:100%" width="413" height="369">  
+    <img src="https://github.com/garvae/ChamelTone/raw/main/public/github/gh_logo_with_heart_text.png" alt="Logo_banner" style="max-width:100%" width="413" height="369">  
 </p>  
 
 
@@ -194,7 +195,7 @@ I would like to refactor:
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://www.github.com/garvae/chameltone/issues). You can also take a look at the [contributing guide](https://wwwhub.com/garvae/chameltone/blob/master/CONTRIBUTING.md).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://www.github.com/garvae/chameltone/issues). You can also take a look at the [contributing guide](https://wwwhub.com/garvae/chameltone/raw/master/CONTRIBUTING.md).
 
 <br/>
 <br/>  
