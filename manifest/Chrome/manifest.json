@@ -1,0 +1,48 @@
+{
+  "name": "ChamelTone",
+  "short_name": "ChamelTone",
+  "description": "Change the look of any websites. Easy. Fast. Pretty.",
+  "author": "Vova_Garvae",
+  "homepage_url": "https://www.garvae.com",
+  "manifest_version": 2,
+  "version": "1.0",
+  "icons": {
+    "16": "./assets/img/favicon/png/favicon_x16.png",
+    "32": "./assets/img/favicon/png/favicon_x32.png",
+    "48": "./assets/img/favicon/png/favicon_x48.png",
+    "96": "./assets/img/favicon/png/favicon_x96.png",
+    "128": "./assets/img/favicon/png/favicon_x128.png",
+    "196": "./assets/img/favicon/png/favicon_x196.png"
+  },
+  "permissions": [
+    "<all_urls>",
+    "activeTab",
+    "tabs",
+    "storage",
+    "unlimitedStorage"
+  ],
+  "background": {
+    "scripts": [
+      "scripts/browser-polyfill.js",
+      "scripts/event.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "ChamelTone",
+    "default_popup": "index.html",
+    "browser_style": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "css": [],
+      "js": [
+        "scripts/browser-polyfill.js",
+        "scripts/content.js"
+      ]
+    }
+  ]
+}
