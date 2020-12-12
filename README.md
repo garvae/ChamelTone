@@ -60,7 +60,7 @@ The interaction scheme is approximately as follows:
 <br/>
 
 <p align="center">
-    <img src="https://github.com/garvae/ChamelTone/blob/main/public/github/app_process_scheme.jpg" alt="app_process_scheme" style="max-width:100%" width="950" height="407">
+    <img src="https://github.com/garvae/ChamelTone/blob/main/public/github/app_process_scheme.jpg" alt="app_process_scheme" style="max-width:100%" width="850" height="365">
 </p>
 <br/>
 <br/>  
@@ -205,13 +205,14 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 
 Give a  ⭐ and your ❤️ if this project helped you!
 
-<br/>
+
 <br/>
 
 <a href="https://www.patreon.com/garvae">
   <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
 </a>
 
+<br/>
 <br/>
 
 ❤️️ <https://ko-fi.com/garvae>
