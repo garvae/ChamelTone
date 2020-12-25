@@ -155,7 +155,7 @@ npm run build_chrome
 <br/>  
 
 <p align="center">  
-    <img src="https://github.com/garvae/ChamelTone/raw/main/public/github/gh_logo_with_heart_text.png" alt="Logo_banner" width="100%" height="auto" max-width="400px">  
+    <img src="https://github.com/garvae/ChamelTone/raw/main/public/github/gh_logo_with_heart_text.png" alt="Logo_banner" width="70%" height="auto" >  
 </p>  
 
 
