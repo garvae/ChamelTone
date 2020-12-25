@@ -7,7 +7,7 @@
 
 <p align="center">
     <img src="https://github.com/garvae/ChamelTone/raw/main/public/github/gh_banner_en.png" alt="Logo_banner" style
-    ="max-width:100%" width="828" height="316">
+    ="max-width:100%" width="100%">
 </p>  
 
 
