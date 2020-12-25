@@ -13,13 +13,13 @@
 <p align="center">
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.1-blue.svg?cacheSeconds=2592000" />
   <a href="https://www.github.com/garvae/chameltone" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" width="100%" height="auto"/>
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" >
   </a>
   <a href="#" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" width="100%" height="auto"/>
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
   <a href="https://twitter.com/garvae" target="_blank">
-    <img alt="Twitter: garvae" src="https://img.shields.io/twitter/follow/garvae.svg?style=social" width="100%" height="auto"/>
+    <img alt="Twitter: garvae" src="https://img.shields.io/twitter/follow/garvae.svg?style=social" />
   </a>
 </p>
 
@@ -155,7 +155,7 @@ npm run build_chrome
 <br/>  
 
 <p align="center">  
-    <img src="https://github.com/garvae/ChamelTone/raw/main/public/github/gh_logo_with_heart_text.png" alt="Logo_banner" width="100%" height="auto">  
+    <img src="https://github.com/garvae/ChamelTone/raw/main/public/github/gh_logo_with_heart_text.png" alt="Logo_banner" style="max-width: 400px" width="100%" height="auto">  
 </p>  
 
 
