@@ -6,21 +6,20 @@
 <br/>
 
 <p align="center">
-    <img src="https://github.com/garvae/ChamelTone/raw/main/public/github/gh_banner_en.png" alt="Logo_banner" style
-    ="max-width:100%" width="100%">
+    <img src="https://github.com/garvae/ChamelTone/raw/main/public/github/gh_banner_en.png" alt="Logo_banner" width="100%" height="auto">
 </p>  
 
 
 <p align="center">
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.1-blue.svg?cacheSeconds=2592000" />
   <a href="https://www.github.com/garvae/chameltone" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" width="100%" height="auto"/>
   </a>
   <a href="#" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" width="100%" height="auto"/>
   </a>
   <a href="https://twitter.com/garvae" target="_blank">
-    <img alt="Twitter: garvae" src="https://img.shields.io/twitter/follow/garvae.svg?style=social" />
+    <img alt="Twitter: garvae" src="https://img.shields.io/twitter/follow/garvae.svg?style=social" width="100%" height="auto"/>
   </a>
 </p>
 
@@ -61,7 +60,7 @@ The interaction scheme is approximately as follows:
 <br/>
 
 <p align="center">
-    <img src="https://github.com/garvae/ChamelTone/raw/main/public/github/app_process_scheme.jpg" alt="app_process_scheme" style="max-width:100%" width="850" height="365">
+    <img src="https://github.com/garvae/ChamelTone/raw/main/public/github/app_process_scheme.jpg" alt="app_process_scheme" width="100%" height="auto">
 </p>
 <br/>
 <br/>  
@@ -156,7 +155,7 @@ npm run build_chrome
 <br/>  
 
 <p align="center">  
-    <img src="https://github.com/garvae/ChamelTone/raw/main/public/github/gh_logo_with_heart_text.png" alt="Logo_banner" style="max-width:100%" width="413" height="369">  
+    <img src="https://github.com/garvae/ChamelTone/raw/main/public/github/gh_logo_with_heart_text.png" alt="Logo_banner" width="100%" height="auto">  
 </p>  
 
 
