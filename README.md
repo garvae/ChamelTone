@@ -159,7 +159,7 @@ npm run build_chrome
 </p>  
 
 
-This extension **built with love**, but I am aware of the **need to refactor** this application. But I started to do it 8 months ago with minimal programming skills and at the start of my "programming way" had no idea how to do this better 😅.
+This extension **built with love**, but I am aware of the **need to refactor** this application. But I started to do it at the beginning of 2020 with minimal programming skills and at the start of my "programming way" had no idea how to do this better 😅.
 I am planning further refactorings and optimizations.
 I would like to refactor:
 - redux logic. it turned out to be too heavy and contains errors
