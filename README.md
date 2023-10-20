@@ -1,3 +1,13 @@
+# DEPRECATED
+
+<br/>
+
+⛔ This package is outdated and has not been supported for several years. The browser API has changed a lot since the development of this package and can no longer be used. This package was developed without sufficient knowledge and the code in this package is, frankly, just terrible. The solutions used in this package do not meet quality standards and are not efficient enough to implement such tasks.
+
+<br/>
+
+<hr/>
+
 
 <p align="center"><h1 align="center">ChamelTone 💙</h1></p>
 
@@ -192,34 +202,72 @@ I would like to refactor:
 <br/>
 <br/>  
 
-## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://www.github.com/garvae/chameltone/issues). You can also take a look at the [contributing guide](https://wwwhub.com/garvae/chameltone/raw/master/CONTRIBUTING.md).
 
-<br/>
-<br/>  
+## 🤝 Contributions
 
-## Show your support
-<br/>
-<br/>
+🤝 Contributions, issues and feature requests are welcome! <br/>
+Feel free to check [issues page][issue] and [pull request page][pr].
 
-Give a  ⭐ and your ❤️ if this project helped you!
-
+❤️ **Give a** ⭐ **if you like this project!**
 
 <br/>
 
-<a href="https://www.patreon.com/garvae">
-  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
+## 📞 Contact me
+
+### 🌐 [Contact page][garvae]
+
+### 🔳 QR code
+
+<div style="background-color: white; display: inline-block; margin-top: 2em; margin-bottom: 2em">
+    <img src="https://github.com/garvae/assets/blob/master/assets/img/garvae-contacts.png?raw=true" alt="contact me" width="300px" height="300px">
+</div>
+
+### 🔗 Links
+
+- [**E-mail**][email]
+- [**Telegram**][telegram]
+- [**Facebook**][facebook]
+- [**Instagram**][instagram]
+- [**LinkedIn**][linkedin]
+- [**GitHub**][github]
 
 <br/>
-<br/>
 
-❤️️ <https://ko-fi.com/garvae>
+## 🚀 Mentoring
 
-<br/>
-
-❤️️ <https://pay.cloudtips.ru/p/859caa2a>
+**If you want to grow** 🚀 **fast in front-end development - [contact me!][garvae]**  🙋‍♂
 
 <br/>
-<br/>
+
+## 📄 License
+
+[See license in the "**LICENCE**" file][license]
+
+[//]: # (------------------------------------------------------------------)
+[//]: # (------------------------- Document links -------------------------)
+[//]: # (------------------------------------------------------------------)
+
+[//]: # (--------------------------- repo links ---------------------------)
+
+
+
+[//]: # (-------------------------- common links --------------------------)
+
+[issue]:https://github.com/garvae/ChamelTone/issues
+[pr]:https://github.com/garvae/ChamelTone/pulls
+[repo]:https://github.com/garvae/ChamelTone
+[license]:https://github.com/garvae/ChamelTone/blob/master/LICENSE?raw=true
+
+[//]: # (---------------------------- contacts ----------------------------)
+
+[garvae]:https://sprd.li/4wr38watys
+[email]:vgarvae@gmail.com
+[telegram]:https://t.me/garvae
+[facebook]:https://www.facebook.com/garvae
+[instagram]:https://www.instagram.com/garvae
+[linkedin]:https://linkedin.com/in/garvae
+[github]:https://github.com/garvae
+
+[//]: # (------------------------------------------------------------------)
+[//]: # (------------------------------------------------------------------)
